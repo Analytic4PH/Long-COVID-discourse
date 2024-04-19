@@ -2,7 +2,11 @@ from st_pages import Page, show_pages, add_page_title  # allow multipages
 import streamlit as st
 import os, sys
 
+
 # ================================  add paths ================================ 
+parent_dir = os.path.dirname( os.path.realpath(__file__) )
+gparent_dir = os.path.dirname( parent_dir )
+
 sys.path.append(gparent_dir)
 sys.path.append(parent_dir)
 
