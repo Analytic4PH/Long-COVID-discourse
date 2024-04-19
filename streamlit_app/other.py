@@ -23,7 +23,7 @@ html_datasets, pages = [], []
 for i,file in enumerate( files ):
   with open(file,'r') as f: 
     html_data = f.read()
-  st.components.v1.html(html_data, scrolling=True, height=5000 ) 
+  st.components.v1.html(html_data, scrolling=True, height=1000 ) 
   #html_datasets.append( html_data ) 
   
   
