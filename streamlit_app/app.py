@@ -7,6 +7,9 @@ import os, sys
 parent_dir = os.path.dirname( os.path.realpath(__file__) )
 gparent_dir = os.path.dirname( parent_dir )
 
+st.text( parent_dir )
+st.text( gparent_dir )
+
 sys.path.append(gparent_dir)
 sys.path.append(parent_dir)
 
