@@ -16,7 +16,7 @@ sys.path.append( parent_dir  )
 # ================================ Widget =============================== 
 st.header("Other results")
 
-files = glob( gparent_dir + '/visualizations/html/eu*.html' )
+files = glob( gparent_dir + '/visualizations/html/EU/eu*.html' )
 html_datasets, pages = [], []
 st.header( 'Results on tweets from Europe' )
 for i,file in enumerate( files ):
@@ -27,7 +27,7 @@ for i,file in enumerate( files ):
 
 
 st.header( 'Results on tweets from USA' )
-files = glob( gparent_dir + '/visualizations/html/us*.html' )
+files = glob( gparent_dir + '/visualizations/html/US/us*.html' )
 html_datasets, pages = [], []
 for i,file in enumerate( files ):
   with open(file,'r') as f: 
@@ -35,6 +35,15 @@ for i,file in enumerate( files ):
   st.write( file )
   st.components.v1.html(html_data, scrolling=True, height=1000 ) 
 
+
+st.header( 'Results on tweets from Canada' )
+files = glob( gparent_dir + '/visualizations/html/*.html' )
+html_datasets, pages = [], []
+for i,file in enumerate( files ):
+  with open(file,'r') as f: 
+    html_data = f.read()   
+  st.write( file )
+  st.components.v1.html(html_data, scrolling=True, height=1000 ) 
 
 
 #html_datasets.append( html_data ) 
