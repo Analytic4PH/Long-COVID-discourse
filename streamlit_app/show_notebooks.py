@@ -15,9 +15,7 @@ sys.path.append( parent_dir  )
 # ================================ Widget =============================== 
 st.title("Notebooks")
 
-tabs = st.tabs( ['Europe', 'USA', 'Canada'] )
-
-with tabs[0]:
+if 1:
   files = glob( gparent_dir + '/visualizations/notebooks/*.*' )
   html_datasets, pages = [], []
   #st.header( 'Results on tweets from Europe' )
