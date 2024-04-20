@@ -23,6 +23,7 @@ st.components.v1.html(html_data, scrolling=True, height=500 )
 show_pages(
     [
         Page( parent_dir + "/app.py", "Home", "🏠"),         
-        Page( parent_dir + "/other.py", "Other results"),         
+        Page( parent_dir + "/other.py", "pyLDA results"),         
+        Page( parent_dir + "/show_notebooks.py", "Notebooks"),         
     ] 
 )
