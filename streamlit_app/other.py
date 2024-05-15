@@ -6,6 +6,7 @@ import streamlit.components.v1 as components
 
 # ================================ configs ================================ 
 st.set_page_config(layout="wide")
+DEBUG=1
 
 # ================================  add paths ================================ 
 parent_dir = os.path.dirname( os.path.realpath(__file__) )
@@ -17,7 +18,7 @@ st.text( parent_dir  )
 st.text( gparent_dir )
 sys.path.append( gparent_dir )
 sys.path.append( parent_dir  )
- 
+
 
 # ================================ Widget =============================== 
 st.header("Other results")
@@ -26,7 +27,10 @@ tabs = st.tabs( ['Europe', 'USA', 'Canada'] )
 
 for month in ['march', 'july', 'december' ]:
  with tabs[0]:
-   files = glob( gparent_dir + f'/visualizations/html/EU/eu*{month}.html' )
+   ss = gparent_dir + f'/visualizations/html/EU/eu*{month}.html' 
+   if DEBUG:
+    st.text(ss)
+   files = glob( ss )
    html_datasets, pages = [], []
    st.header( 'Results on tweets from Europe' )
    for i,file in enumerate( files ):
