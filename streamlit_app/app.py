@@ -2,7 +2,8 @@ from st_pages import Page, show_pages, add_page_title  # allow multipages
 import streamlit as st
 import os, sys
 from glob import glob
-
+import streamlit.components.v1 as components
+ 
 # ================================  add paths ================================ 
 parent_dir = os.path.dirname( os.path.realpath(__file__) )
 gparent_dir = os.path.dirname( parent_dir )
@@ -18,7 +19,7 @@ with open(path_to_html,'r') as f:
     
 # ================================  Widget ================================ 
 st.header("Project 2")
-st.components.v1.html(html_data, scrolling=True, height=500 ) 
+components.html(html_data, scrolling=True, height=500 ) 
  
 show_pages(
     [
