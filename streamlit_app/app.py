@@ -30,3 +30,7 @@ show_pages(
         Page( parent_dir + "/show_notebooks.py", "Notebooks"),         
     ] 
 )
+
+f = 'README.md'
+mkd = Path( gparent_dir+ f ).read_text()
+st.markdown( mkd )
