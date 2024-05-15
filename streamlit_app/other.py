@@ -27,7 +27,7 @@ tabs = st.tabs( ['Europe', 'USA', 'Canada'] )
 
 for month in ['march', 'july', 'december' ]:
  with tabs[0]:
-   ss = gparent_dir + f'/visualizations/html/EU/eu*{month}.html' 
+   ss = gparent_dir + f'/visualizations/html/EU/eu*{month}*.html' 
    if DEBUG:
     st.text(ss)
    files = glob( ss )
@@ -41,7 +41,7 @@ for month in ['march', 'july', 'december' ]:
  
  with tabs[1]:
    st.header( 'Results on tweets from USA' )
-   files = glob( gparent_dir + f'/visualizations/html/US/us*{month}.html' )
+   files = glob( gparent_dir + f'/visualizations/html/US/us*{month}*.html' )
    html_datasets, pages = [], []
    for i,file in enumerate( files ):
      with open(file,'r') as f: 
@@ -51,7 +51,7 @@ for month in ['march', 'july', 'december' ]:
  
  with tabs[2]:
    st.header( 'Results on tweets from Canada' )
-   files = glob( gparent_dir + f'/visualizations/html/*{month}.html' )
+   files = glob( gparent_dir + f'/visualizations/html/*{month}*.html' )
    html_datasets, pages = [], []
    for i,file in enumerate( files ):
      with open(file,'r') as f: 
