@@ -5,6 +5,7 @@ from glob import glob
 
 import streamlit.components.v1 as components
 
+st.set_page_config(layout="wide")
 
 # ================================  add paths ================================ 
 parent_dir = os.path.dirname( os.path.realpath(__file__) )
