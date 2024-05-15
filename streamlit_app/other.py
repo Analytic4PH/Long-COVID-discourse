@@ -4,10 +4,14 @@ import os, sys
 from glob import glob
 import streamlit.components.v1 as components
 
+# ================================ configs ================================ 
+st.set_page_config(layout="wide")
 
 # ================================  add paths ================================ 
 parent_dir = os.path.dirname( os.path.realpath(__file__) )
 gparent_dir = os.path.dirname( parent_dir )
+
+
 
 st.text( parent_dir  )
 st.text( gparent_dir )
