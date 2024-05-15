@@ -27,7 +27,7 @@ if 0:
 show_pages(
     [
         Page( parent_dir + "/app.py", "Home", "🏠"),         
-        Page( parent_dir + "/other.py", "pyLDA results"),         
+        Page( parent_dir + "/jan.py", "pyLDA visualizations for Jan 2021"),         
         Page( parent_dir + "/show_notebooks.py", "Notebooks"),         
     ] 
 )
