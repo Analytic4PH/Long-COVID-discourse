@@ -26,9 +26,14 @@ if 0:
  
 show_pages(
     [
-        Page( parent_dir + "/app.py", "Home", "🏠"),         
-        Page( parent_dir + "/jan.py", "pyLDA visualizations for Jan 2021"),         
-        Page( parent_dir + "/show_notebooks.py", "Notebooks"),         
+     Page( parent_dir + "/app.py", "Home", "🏠"),         
+     Page( parent_dir + "/jan.py", "Jan 2021 (pyLDA viz)"),         
+     Page( parent_dir + "/march.py", "Mar 2021"),         
+     Page( parent_dir + "/may.py", "May 2021"),         
+     Page( parent_dir + "/july.py", "Jul 2021"),         
+     Page( parent_dir + "/sep.py", "Sep 2021"),         
+     Page( parent_dir + "/nov.py", "Nov 2021"),         
+     Page( parent_dir + "/show_notebooks.py", "Notebooks (test)"),         
     ] 
 )
 
