@@ -3,7 +3,8 @@ import streamlit as st
 import os, sys
 from glob import glob
 import streamlit.components.v1 as components
- 
+from pathlib import Path
+
 # ================================  add paths ================================ 
 parent_dir = os.path.dirname( os.path.realpath(__file__) )
 gparent_dir = os.path.dirname( parent_dir )
@@ -31,6 +32,6 @@ show_pages(
     ] 
 )
 
-f = 'README.md'
-mkd = Path( gparent_dir+ f ).read_text()
+f = gparent_dir + 'README.md'
+mkd = Path( f ).read_text()
 st.markdown( mkd )
