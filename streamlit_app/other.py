@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 
 # ================================ configs ================================ 
 st.set_page_config(layout="wide")
-DEBUG=1
+DEBUG=0
 
 # ================================  add paths ================================ 
 parent_dir = os.path.dirname( os.path.realpath(__file__) )
@@ -25,7 +25,7 @@ st.header("Other results")
 
 tabs = st.tabs( ['Europe', 'USA', 'Canada'] )
 
-for month in ['march', 'july', 'december' ]:
+for month in ['jan', 'march', 'may', 'july', 'sept', 'nov' ]:
  with tabs[0]:
    ss = gparent_dir + f'/visualizations/html/EU/eu*{month}*.html' 
    if DEBUG:
