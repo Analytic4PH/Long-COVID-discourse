@@ -15,15 +15,7 @@ st.text( gparent_dir )
 sys.path.append( gparent_dir )
 sys.path.append( parent_dir  )
 
-if 0:
- # ================================  Widget ================================ 
- path_to_html = gparent_dir + '/visualizations/project2/yearly_network_graph.html'
- with open(path_to_html,'r') as f: 
-     html_data = f.read()
- 
- st.header("Project 2")
- components.html(html_data, scrolling=True, height=500 ) 
- 
+
 show_pages(
     [
      Page( parent_dir + "/app.py", "Home", "🏠"),         
