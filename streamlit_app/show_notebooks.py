@@ -3,6 +3,9 @@ import streamlit as st
 import os, sys
 from glob import glob
 
+import streamlit.components.v1 as components
+
+
 # ================================  add paths ================================ 
 parent_dir = os.path.dirname( os.path.realpath(__file__) )
 gparent_dir = os.path.dirname( parent_dir )
@@ -23,5 +26,5 @@ if 1:
     with open(file,'r') as f: 
       data = f.read()   
     st.write( file )
-    st.components.v1.html( data, scrolling=True, height=1000 ) 
+    components.html( data, scrolling=True, height=1000 ) 
  
