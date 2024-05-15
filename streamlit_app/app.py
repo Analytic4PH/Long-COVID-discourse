@@ -25,7 +25,7 @@ show_pages(
      Page( parent_dir + "/july.py", "Jul 2021"),         
      Page( parent_dir + "/sep.py", "Sep 2021"),         
      Page( parent_dir + "/nov.py", "Nov 2021"),         
-     Page( parent_dir + "/show_notebooks.py", "Notebooks (test)"),         
+     Page( parent_dir + "/misc.py", "Misc (demo)"),         
     ] 
 )
 
