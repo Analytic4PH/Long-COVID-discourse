@@ -25,7 +25,7 @@ st.header("Other results")
 
 tabs = st.tabs( ['Europe', 'USA', 'Canada'] )
 
-for month in ['jan', 'march', 'may', 'july', 'sept', 'nov' ]:
+for month in ['jan',  ]:
  with tabs[0]:
    ss = gparent_dir + f'/visualizations/html/EU/eu*{month}*.html' 
    if DEBUG:
