@@ -37,7 +37,7 @@ for month in ['jan', 'march', 'may', 'july', 'sept', 'nov' ]:
    for i,file in enumerate( files ):
      with open(file,'r') as f: 
        html_data = f.read()   
-     st.write( month.upper() + ' ' + 2021 ) 
+     st.write( month.upper() + ' 2021' ) 
      components.html(html_data, scrolling=True, height=1000 ) 
  
  with tabs[1]:
@@ -48,7 +48,7 @@ for month in ['jan', 'march', 'may', 'july', 'sept', 'nov' ]:
      with open(file,'r') as f: 
        html_data = f.read()   
      #st.write( file )
-     st.header( month.upper() + ' ' + 2021 )
+     st.write( month.upper() + ' 2021' ) 
      components.html(html_data, scrolling=True, height=1000 ) 
  
  with tabs[2]:
@@ -58,7 +58,7 @@ for month in ['jan', 'march', 'may', 'july', 'sept', 'nov' ]:
    for i,file in enumerate( files ):
      with open(file,'r') as f: 
        html_data = f.read()   
-     st.write( month.upper() + ' ' + 2021 ) 
+     st.write( month.upper() + ' 2021' ) 
      components.html(html_data, scrolling=True, height=1000 ) 
  
 
