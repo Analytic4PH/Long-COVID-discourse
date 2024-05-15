@@ -32,6 +32,7 @@ show_pages(
     ] 
 )
 
-f = gparent_dir + 'README.md'
+f = gparent_dir + '/README.md'
+st.text(f)
 mkd = Path( f ).read_text()
 st.markdown( mkd )
