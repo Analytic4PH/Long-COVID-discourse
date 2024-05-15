@@ -8,18 +8,20 @@ import streamlit.components.v1 as components
 parent_dir = os.path.dirname( os.path.realpath(__file__) )
 gparent_dir = os.path.dirname( parent_dir )
 
+st.set_page_config(layout="wide") 
 st.text( parent_dir  )
 st.text( gparent_dir )
 sys.path.append( gparent_dir )
 sys.path.append( parent_dir  )
 
-path_to_html = gparent_dir + '/visualizations/project2/yearly_network_graph.html'
-with open(path_to_html,'r') as f: 
-    html_data = f.read()
-    
-# ================================  Widget ================================ 
-st.header("Project 2")
-components.html(html_data, scrolling=True, height=500 ) 
+if 0:
+ # ================================  Widget ================================ 
+ path_to_html = gparent_dir + '/visualizations/project2/yearly_network_graph.html'
+ with open(path_to_html,'r') as f: 
+     html_data = f.read()
+ 
+ st.header("Project 2")
+ components.html(html_data, scrolling=True, height=500 ) 
  
 show_pages(
     [
