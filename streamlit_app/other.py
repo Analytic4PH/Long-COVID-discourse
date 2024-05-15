@@ -28,7 +28,7 @@ with tabs[0]:
     with open(file,'r') as f: 
       html_data = f.read()   
     st.write( file )
-    components.v1.html(html_data, scrolling=True, height=1000 ) 
+    components.html(html_data, scrolling=True, height=1000 ) 
 
 with tabs[1]:
   st.header( 'Results on tweets from USA' )
@@ -38,7 +38,7 @@ with tabs[1]:
     with open(file,'r') as f: 
       html_data = f.read()   
     st.write( file )
-    components.v1.html(html_data, scrolling=True, height=1000 ) 
+    components.html(html_data, scrolling=True, height=1000 ) 
 
 with tabs[2]:
   st.header( 'Results on tweets from Canada' )
@@ -48,7 +48,7 @@ with tabs[2]:
     with open(file,'r') as f: 
       html_data = f.read()   
     st.write( file )
-    st.components.v1.html(html_data, scrolling=True, height=1000 ) 
+    components.html(html_data, scrolling=True, height=1000 ) 
 
 
 #html_datasets.append( html_data ) 
