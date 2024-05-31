@@ -19,13 +19,7 @@ sys.path.append( parent_dir  )
 show_pages(
     [
      Page( parent_dir + "/app.py", "Home", "🏠"),         
-     Page( parent_dir + "/jan.py", "Jan 2021 (pyLDA viz)"),         
-     Page( parent_dir + "/march.py", "Mar 2021"),         
-     Page( parent_dir + "/may.py", "May 2021"),         
-     Page( parent_dir + "/july.py", "Jul 2021"),         
-     Page( parent_dir + "/sep.py", "Sep 2021"),         
-     Page( parent_dir + "/nov.py", "Nov 2021"),         
-     Page( parent_dir + "/misc.py", "Misc (demo)"),         
+     Page( parent_dir + "/jan.py", "Expansions of Figure 1 (pyLDA viz)" ),      
     ] 
 )
 
