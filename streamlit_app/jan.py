@@ -21,7 +21,7 @@ sys.path.append( parent_dir  )
 
 
 # ================================ Widget =============================== 
-st.header("Other results")
+st.header("Example pyLDA visualizations")
 
 tabs = st.tabs( ['Europe', 'USA', 'Canada'] )
 
@@ -59,8 +59,8 @@ for month in ['jan',  ]:
      with open(file,'r') as f: 
        html_data = f.read()   
      st.write( month.upper() + ' 2021' ) 
-     components.html(html_data, scrolling=True, height=1000 ) 
- 
+     components.html(html_data, scrolling=True, height=1000 )  
+     break
 
 #html_datasets.append( html_data ) 
   
